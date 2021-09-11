@@ -1,0 +1,6 @@
+package com.ibm.aac.gerardo.orquester.controllers;
+
+public interface OrquesterController {
+	
+	public ResponseEntity<CipherOutput> cipherMessage(CipherInput input);
+}

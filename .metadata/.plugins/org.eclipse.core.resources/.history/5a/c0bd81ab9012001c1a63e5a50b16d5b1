@@ -1,0 +1,16 @@
+package com.ibm.aac.gerardo.orquester.clients;
+
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.ibm.aac.gerardo.orquester.dto.CipherInput;
+import com.ibm.aac.gerardo.orquester.dto.CipherOutput;
+
+@FeignClient("CIPHER_SERVICE")
+@RequestMapping("/cipher/api/v1")
+public interface CipherClient {
+	
+	public ResponseEntity<CipherOutput> cipherMessage(CipherInput input);
+	
+}

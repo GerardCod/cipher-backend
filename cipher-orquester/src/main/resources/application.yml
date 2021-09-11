@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: OrquesterService
+    
+server:
+  port: 9091
+  
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8099/eureka/

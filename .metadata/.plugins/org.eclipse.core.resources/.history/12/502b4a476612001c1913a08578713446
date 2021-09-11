@@ -1,0 +1,31 @@
+package com.ibm.aac.gerardo.services;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class CeasarCipherServiceImpl implements CaesarCipherService {
+
+	@Override
+	public String cipherText(String text, Integer shift) {
+		char[] cipherText = new char[text.length()];
+		
+		for (int i = 0; i < text.length(); i++) {
+			char currentChar = text.charAt(i);
+			char cipherSymbol = currentChar;
+			
+			if (isUpper(currentChar)) {
+				cipherSymbol = (char) cipherChar(currentChar, shift, 65);
+				
+			} else if (isLower(currentChar)) {
+				cipherSymbol = (char) cipherChar(currentChar, shift, 97);
+				
+			}
+			
+			cipherText[i] = cipherSymbol;
+		}
+		
+		return String.valueOf(cipherText);
+	}
+	
+	
+}

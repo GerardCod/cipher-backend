@@ -1,0 +1,6 @@
+package com.ibm.aac.gerardo.orquester.dto;
+
+public class CipherInput {
+	private String message;
+	private Integer shiftKey;
+}

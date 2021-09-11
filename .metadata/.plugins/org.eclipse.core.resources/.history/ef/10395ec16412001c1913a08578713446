@@ -1,0 +1,8 @@
+package com.ibm.aac.gerardo.controllers;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class CaesarDecipherController implements DecipherController {
+
+}

@@ -1,0 +1,9 @@
+package com.ibm.aac.gerardo.orquester.dto;
+
+@Setter
+@Getter
+@ToString
+@AllArgsConstructor
+public class DecipherOutput {
+	private String decipherMessage;
+}

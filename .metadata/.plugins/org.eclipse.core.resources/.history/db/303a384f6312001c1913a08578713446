@@ -1,0 +1,29 @@
+package com.ibm.aac.gerardo.services;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class CaesarDecipherService implements DecipherService {
+
+	@Override
+	public String decipher(String cipherMessage, Integer shift) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean isUpper(char symbol) {
+		return (symbol >= 65 && symbol <= 90);
+	}
+
+	@Override
+	public boolean isLower(char symbol) {
+		return (symbol >= 97 && symbol <= 122);
+	}
+
+	@Override
+	public int decipherChar(char currentChar, int shift, int initialAscii) {
+		return 0;
+	}
+	
+}

@@ -1,0 +1,6 @@
+package com.ibm.aac.gerardo.orquester.clients;
+
+@RequestMapping("/decipher/api/v1")
+public interface DecipherClient {
+
+}

@@ -1,0 +1,8 @@
+package com.ibm.aac.gerardo.orquester.clients;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@RequestMapping("/cipher/api/v1")
+public interface CipherClient {
+
+}

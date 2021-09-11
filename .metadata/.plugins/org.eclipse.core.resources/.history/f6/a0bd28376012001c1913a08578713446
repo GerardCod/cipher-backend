@@ -1,0 +1,5 @@
+package com.ibm.aac.gerardo.services;
+
+public interface DecipherService {
+	String decipher(Integer shift, String cipherMessage);
+}

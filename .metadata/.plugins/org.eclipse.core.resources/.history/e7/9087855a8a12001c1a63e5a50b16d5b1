@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: CIPHER_SERVICE
+
+server:

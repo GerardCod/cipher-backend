@@ -1,0 +1,10 @@
+package com.ibm.aac.gerardo.orquester.clients;
+
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@FeignClient("DECIPHER_CLIENT")
+@RequestMapping("/decipher/api/v1")
+public interface DecipherClient {
+
+}

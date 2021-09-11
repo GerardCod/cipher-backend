@@ -1,0 +1,9 @@
+package com.ibm.aac.gerardo.dto;
+
+import lombok.Setter;
+
+@Setter
+@Getter
+public class Output {
+	private String cipherMessage;
+}

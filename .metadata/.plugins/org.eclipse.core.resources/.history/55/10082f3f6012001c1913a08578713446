@@ -1,0 +1,14 @@
+package com.ibm.aac.gerardo.services;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class CaesarDecipherService implements DecipherService {
+
+	@Override
+	public String decipher(Integer shift, String cipherMessage) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,6 @@
+package com.ibm.aac.gerardo.orquester.clients;
+
+@RequestMapping
+public interface CipherClient {
+
+}

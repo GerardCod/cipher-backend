@@ -1,0 +1,2 @@
+spring.application.name=CAESAR_CIPHER_SERVICE
+server.port=8081

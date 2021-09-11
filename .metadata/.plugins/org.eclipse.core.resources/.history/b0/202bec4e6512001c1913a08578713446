@@ -1,0 +1,22 @@
+package com.ibm.aac.gerardo.controllers;
+
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.function.EntityResponse;
+
+import com.ibm.aac.gerardo.dto.Input;
+import com.ibm.aac.gerardo.dto.Output;
+
+@RestController
+@RequestMapping("/decipher/api/v1")
+public class CaesarDecipherController implements DecipherController {
+
+	@Override
+	@PostMapping("/")
+	public EntityResponse<Output> decipherMessage(Input input) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

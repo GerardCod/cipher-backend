@@ -1,0 +1,13 @@
+package com.ibm.aac.gerardo.orquester;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class CipherOrquesterApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(CipherOrquesterApplication.class, args);
+	}
+
+}

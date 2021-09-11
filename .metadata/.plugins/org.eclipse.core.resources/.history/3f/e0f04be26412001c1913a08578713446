@@ -1,0 +1,18 @@
+package com.ibm.aac.gerardo.controllers;
+
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.function.EntityResponse;
+
+import com.ibm.aac.gerardo.dto.Input;
+import com.ibm.aac.gerardo.dto.Output;
+
+@RestController
+public class CaesarDecipherController implements DecipherController {
+
+	@Override
+	public EntityResponse<Output> decipherMessage(Input input) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

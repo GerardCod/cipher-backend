@@ -1,0 +1,67 @@
+package com.ibm.aac.gerardo.services;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class CeasarCipherServiceImpl implements CaesarCipherService {
+
+	@Override
+	public String cipherText(String text, Integer shift) {
+		char[] cipherText = new char[text.length()];
+		
+		for (int i = 0; i < text.length(); i++) {
+			char currentChar = text.charAt(i);
+			char cipherSymbol = currentChar;
+			
+			if (isUpper(currentChar)) {
+				cipherSymbol = (char) cipherChar(currentChar, shift, 65);
+				
+			} else if (isLower(currentChar)) {
+				cipherSymbol = (char) cipherChar(currentChar, shift, 97);
+				
+			}
+			
+			cipherText[i] = cipherSymbol;
+		}
+		
+		return String.valueOf(cipherText);
+	}
+	
+	/**
+	 * Verifies if a char value has an uppercase ascii value.
+	 * @param symbol character value.
+	 * @return 
+	 * <ul>
+	 * 		<li>true if the character is an uppercase ascii value</li>
+	 * 		<li>false if the character is not an uppercase ascii value</li>
+	 * </ul>
+	 */
+	private boolean isUpper(char symbol) {
+		return (symbol >= 65 && symbol <= 90);
+	}
+	
+	/**
+	 * Verifies if a char value has a lowercase ascii value.
+	 * @param symbol character value.
+	 * @return
+	 * <ul>
+	 * 		<li>true if the character has a lowercase ascii value.</li>
+	 * 		<li>false if the character does not have a lowercase ascii value.</li>
+	 * </ul>
+	 */
+	private boolean isLower(char symbol) {
+		return (symbol >= 97 && symbol <= 122);
+	}
+	
+	/**
+	 * Return an ascii value applying the caesar cipher algorithm.
+	 * @param currentValue the char value.
+	 * @param shift the shift of the caesar cipher algorithm.
+	 * @param asciiInitialValue the ascii initial value.
+	 * @return the cipher ascii value.
+	 */
+	private int cipherChar(char currentValue, int shift, int asciiInitialValue) {
+		return (currentValue + shift - asciiInitialValue) % 26 + asciiInitialValue;
+	}
+	
+}

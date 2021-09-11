@@ -1,0 +1,24 @@
+package com.ibm.aac.gerardo.orquester.controllers;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.ibm.aac.gerardo.orquester.dto.CipherInput;
+import com.ibm.aac.gerardo.orquester.dto.CipherOutput;
+import com.ibm.aac.gerardo.orquester.dto.DecipherInput;
+import com.ibm.aac.gerardo.orquester.dto.DecipherOutput;
+
+@RestController
+public class CaesarOrquesterController implements OrquesterController {
+
+	@Override
+	public ResponseEntity<CipherOutput> cipherMessage(CipherInput input) {
+		return null;
+	}
+
+	@Override
+	public ResponseEntity<DecipherOutput> decipherMessage(DecipherInput input) {
+		return null;
+	}
+
+}
